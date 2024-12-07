@@ -1,7 +1,11 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://ccodekat.github.io/",
+=======
+  "homepage": "https://codekat.github.io/hard-list",
+>>>>>>> f5b42c46319720530b9a5efce1c833d154b45d43
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
