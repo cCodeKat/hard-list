@@ -11,7 +11,7 @@ import "./css/main.css";
 
 const App: React.FC = () => {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="banner"></div>
             <Header />
             <main className="page-body">
