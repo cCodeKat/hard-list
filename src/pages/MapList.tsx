@@ -96,7 +96,7 @@ const MapList: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://13.60.36.31/api/maps/')
+        fetch('/api/maps/')
             .then((response) => response.json())
             .then((data) => {
                 setMaps(data);
