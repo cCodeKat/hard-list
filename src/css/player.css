@@ -1,0 +1,119 @@
+hr {
+    margin: 0.6em 0 0.6em 0;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 0.8em;
+}
+
+.player-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#player-title {
+    font-size: 3.6em;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    #player-title {
+        font-size: 2.4em;
+    }
+}
+
+#clear-stats-text {
+    display: flex;
+    align-items: flex-end;
+    font-size: 125%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.star {
+    height: 40px; 
+    width: 40px;
+    mask: url(../../public/static/images/star.svg) no-repeat center / contain;
+    -webkit-mask: url(../../public/static/images/star.svg) no-repeat center / contain;
+    background-color: rgb(255, 214, 50);
+}
+
+@media (max-width: 900px) {
+    .star {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+#clear-section {
+    width: 95%;
+    margin-bottom: 1.8em;
+}
+
+.map-container {
+    display: flex;
+}
+
+.map-container-content {
+    font-size: 150%;
+    padding-top: 0.3em;
+}
+
+.map-container-icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+th { 
+    color: #fff;
+    font-size: 150%;
+    width: 33.333%;
+}
+
+#player-table > tbody > tr > th, #player-table > tbody > tr > td {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    font-size: 133%;
+    line-height: 1.8em;
+    text-align: center;
+    width: 33.333%;
+}
+
+td > a:hover {
+    text-decoration: underline;
+}
+
+#table-container {
+    border-radius: 6px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 900px) {
+    #clear-stats-text {
+        display: none;
+    }
+}
+
+.map-container-content > a:hover {
+    text-decoration: underline;
+}
+
+#player-title > a:hover {
+    text-decoration: underline;
+}

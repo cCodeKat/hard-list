@@ -1,0 +1,68 @@
+.panel {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.panel-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.6em;
+    max-width: 40%;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 55%;
+}
+
+.img-container > div {
+    transform-origin: bottom;
+    transform: skew(-25deg);
+    overflow: hidden;
+    border-width: 0 0 0 5px;
+    border-style: solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.img-container > div > a {
+    transform-origin: inherit;
+}
+
+.img-container > div > a > img {
+    display: block;
+    transform-origin: inherit;
+    transform: skew(25deg);
+}
+
+.divider {
+    background: #191919;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 842.222px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.divider-star {
+    height: 40px; 
+    width: 40px;
+    mask: url(../../public/static/images/star.svg) no-repeat center / contain;
+    -webkit-mask: url(../../public/static/images/star.svg) no-repeat center / contain;
+}
+
+@media (max-width: 900px) {
+    .img-container {
+        display: none;
+    }
+
+    .panel-text {
+        max-width: 90%;
+    }
+}
