@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/api/stats/?format=json')
+        fetch('http://13.60.36.31/api/stats/?format=json')
             .then((response) => response.json())
             .then((data: ApiResponse) => {
                 setStats(data)

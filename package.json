@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "homepage": "https://hardclears.com",
   "private": true,
-  "proxy": "http://13.60.36.31",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

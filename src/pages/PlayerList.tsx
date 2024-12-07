@@ -44,7 +44,7 @@ const PlayerSearch: React.FC = () => {
 
     useEffect(() => {
         const delayDebounce = setTimeout(() => {
-            const searchUrl = `/api/players/?name=${encodeURIComponent(query)}`;
+            const searchUrl = `http://13.60.36.31/api/players/?name=${encodeURIComponent(query)}`;
             fetchPlayers(searchUrl);
         }, 300);
 
@@ -52,7 +52,7 @@ const PlayerSearch: React.FC = () => {
     }, [query]);
 
     useEffect(() => {
-        fetchPlayers("/api/players/");
+        fetchPlayers("http://13.60.36.31/api/players/");
     }, []);
 
     useEffect(() => {

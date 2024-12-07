@@ -41,7 +41,7 @@ const PlayerPage: React.FC = () => {
 
   useEffect(() => {
     if (id) {
-      fetch(`/api/players/${id}`)
+      fetch(`http://13.60.36.31/api/players/${id}`)
         .then((response) => response.json())
         .then((data) => {
           const playerData = data;

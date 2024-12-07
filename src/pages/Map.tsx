@@ -44,7 +44,7 @@ const Map: React.FC = () => {
 
     useEffect(() => {
         // Fetch map data
-        fetch(`/api/maps/${id}`)
+        fetch(`http://13.60.36.31/api/maps/${id}`)
             .then((response) => response.json())
             .then((data: ApiResponse) => {
                 setMapData(data.map);
